@@ -40,13 +40,14 @@ Summary
 
 - Separation of concerns
   - Dev guy worries about insides
-    - Code functionality
+    - Code functionality etc.
   - Ops guy worries aobut outsides
-    - Logging
+    - Logging etc.
 
 - Docker Registry stores config "think Features server"
   - Download once, get changes from server
   - No need to move around the whole container once deployed
+  - Can run your own, seems way easier to user theirs.......
 
 - Written in Go
 
@@ -56,3 +57,35 @@ Summary
   - Single client/server binary
     - recieves / sends Docker api requests
   - Docker hub registry
+
+- Dockerfile
+  - DSL similar to Bash
+  - 'docker build'
+  - super similar to Vagrant
+  - every line if you change will change everywhere
+  - executed in order
+  - cached so never run multiple times
+
+- Security
+  - All ports closed by default
+  - Linking one container talks to another on port
+
+'docker run -t -i web /bin/bash'
+  - open a shell within our container to debug whats going on inside
+
+- docker inspect
+  - find out about container
+  - container ids are hashes don't need whole hash to reference
+  - 'docker inspect $(docker ps -l -q)' inspects last container
+
+- container networking
+  - Assign ports, assign ips, get containers talking publicly or to eachother
+
+- volumes
+  - 'VOLUME /var/lib/postrgres' in DockerFile
+  - 'docker -v /var/lib/postgres' at runtime
+  - bypasses copy on write system (Drupal code goes here!)
+  - share directory or single file
+    - betwen containers
+    - between host and container
+
