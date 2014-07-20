@@ -70,7 +70,7 @@ Summary
   - All ports closed by default
   - Linking one container talks to another on port
 
-'docker run -t -i web /bin/bash'
+- 'docker run -t -i web /bin/bash'
   - open a shell within our container to debug whats going on inside
 
 - docker inspect
@@ -88,4 +88,8 @@ Summary
   - share directory or single file
     - betwen containers
     - between host and container
+  - Volumes container independent
 
+- Connection containers
+  - how do you break up components?
+    - Notes

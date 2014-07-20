@@ -1,0 +1,48 @@
+   10  sudo docker run busybox echo hehello world
+   11  sudo docker pull ubuntu:latest
+   12  docker pull training/docker-fundamentals-image
+   13  docker build -t web .
+   14  docker build -t web https://github.com/docker-training/staticweb.git
+   15  sudo docker build -t web https://github.com/docker-training/staticweb.gitdocker build -t web https://github.com/docker-training/staticweb.git
+   16  history
+   17  sudo sudo docker build -t web https://github.com/docker-training/staticweb.gitdocker build -t web https://github.com/docker-training/staticweb.git
+   18  sudo docker build -t web https://github.com/docker-training/staticweb.gitdocker build -t web https://github.com/docker-training/staticweb.git
+   19  sudo docker build -t web https://github.com/docker-training/staticweb.git
+   20  history
+   21  docker build -t web https://github.com/docker-training/staticweb.git
+   22  ping archive.ubuntu.com
+   23  vi Dockerfile
+   24  docker build -t web .
+   25  ls
+   26  docker build -t web https://github.com/docker-training/staticweb.git
+   27  vi Dockerfile 
+   28  docker run web
+   29  docker run -t -i web /bin/bash
+   30  docker inspect
+   31  docke inspect web
+   32  docker inspect web
+   33  docker inspect $(docker ps -l -q) | less
+   34  docker ps -a
+   35  docker run -d -p 80 training/webapp python -m SimpleHTTPServer 80
+   36  history
+   37  docker ps -a
+   38  docker port $(docker ps -l -q) 80
+   39  docker ps -l -q
+   40  docker help stop
+   41  docker stop all
+   42  docker stop jovial_ptolemy
+   43  docker ps -a
+   44  docker stop ae698553ef60
+   45  docker ps -a
+   46  docker rm ae698553ef60
+   47  docker pull training/postgres
+   48  docker images training/postgres
+   49  docker run -d --name database training/postgres
+   50  docker ps -l
+   51  docker pull training/notes
+   52  docker images training/notes
+   53  docker run --name rails training/notes rake db:create db:migrate
+   54  docker run --name rails training/notes rake
+   55  docker rm rails
+   56  docker run -i -t --name rails --link database:db training/notes rake db:create db:migrate
+   57  history
