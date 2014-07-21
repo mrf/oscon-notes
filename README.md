@@ -119,3 +119,8 @@ Summary
     - FIX ALL THE THINGS
   - GO TEST
     - writing tests part of language
+    - https://github.com/fatih/vim-go runs this automatijically on save
+  - Has first class functions
+    - functions passed to others
+    - etc.
+  - Easy pointers (hmm will have to see...)
