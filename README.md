@@ -124,3 +124,35 @@ Summary
     - functions passed to others
     - etc.
   - Easy pointers (hmm will have to see...)
+  - Types
+    - all the standard types are there
+    - fixed not aliases
+    - Slices vs Arrays
+      - Slice
+        - dynamically grows
+        - core data structer for lists
+      - Rarely use arrays except for fixed lengths
+    - Two types of types
+      - slices, maps, channels == reference types
+  - new(T)
+    - allocates zeroed value of type T
+    - returns pointer to the new value ( \*T)
+    - used for all non-reference types
+  - make()
+    - reference type, does not return pointer
+  - composite literal
+    - expression that creates a new value each time its evalueated
+    - pseudo constructorish
+      - go doesn't have constructors
+  - goroutine
+    - function executing concurrently with others in the same address space
+    - not thread or process
+  - Channels
+    - lightweight
+    - synchronize goroutines
+    - sender / receiver
+    - most Go unique part of language
+  - for
+    -for foreach and while all == for in go
+  - Append
+    - grows shrinks slices and moves in memory
