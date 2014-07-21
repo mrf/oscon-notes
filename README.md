@@ -92,4 +92,30 @@ Summary
 
 - Connection containers
   - how do you break up components?
-    - Notes
+    - depends on your app... and you want to design
+  - 
+
+# Learning Go
+  - http://spf13.com/presentation/first-go-app
+  - How we got here
+    - Blogger wanted fast static site generate to kill wordpress
+    - wrote Hugo generates sites in milliseconds
+    - 2nd most contributors of any Go project
+  - Why go
+    - software hard to write
+    - compilation is fast - so fast it feels dynamic...
+    - installation and environments are hard
+    - concurrent
+    - not theoretically exciting
+  - Packages
+    - not an object and not a class
+    - all visibility at package level
+  - Feels like "C the good parts"
+  - Braces not spaces C-esque
+  - Not many semicolons (inserted by compiler, coding standards compiler enforced)
+  - GO FMT
+    - reformats code
+    - can be used for reformatting
+    - FIX ALL THE THINGS
+  - GO TEST
+    - writing tests part of language
