@@ -156,3 +156,17 @@ Summary
     -for foreach and while all == for in go
   - Append
     - grows shrinks slices and moves in memory
+
+
+# NODE.js Three Ways
+  - @aaroncois, Tim
+  - reactive vs. asynchronous
+    - reactive: interaction paradigm / communication
+    - asynchronous: programming paradigm 
+
+  - package.json for storing dependencies
+  - node_modules local by design
+  - those two combined should be able to get you working
+  - Express
+    - Node MVC framework for frameworky stuff
+  - Node not so impressive after learning Go all morning...
