@@ -236,3 +236,29 @@ Summary
       - released next week
       - Take that eevee!
       - will be living doc curated by php community
+
+# Microsoft Azure and Microsoft Open Source
+  - Scott Hanselman
+  - Hillarious!
+  - Works on Azure
+    - 20 -25% of azuer linux
+    - run linux vms on it
+  - Azure
+    - Three tiers
+      - A site (read pantheon)
+      - A pseudo vm (read docker)
+      - A full vm 
+      - Azure manages os on first two
+  - C# and .net compiler open sourced
+  - Azure itself open sourced
+  - on freaking github
+  - "Microsoft not organized enough to be as evil as you think it is"
+  - New Visual Studio looks freaking incredible
+    - Node.js Express in VS weird, I need a shower
+    - grunt and bower coming soon
+  - Cross browser in browser editing with SignalRo
+    - Signal similar to websockets for .net 
+  - despite rumors asp.net not responsible for banking crisis 
+  - Microsoft slogan contest
+    - remember us
+    - halo didn't suck
