@@ -169,4 +169,70 @@ Summary
   - those two combined should be able to get you working
   - Express
     - Node MVC framework for frameworky stuff
-  - Node not so impressive after learning Go all morning...
+    - Node not as impressive after learning Go all morning...
+    - Having trouble getting excited about MVC in node
+    - Much easier than Symfony to get serve a page for first time <- see positivity!
+  - Socket.io
+    - Ahh here we go this is more Nodey
+  - Meteor
+    - Single page
+    - reactive
+      - everything goes everywhere
+    - security / performance
+      - `meteor remove autopublish` 
+      - now we have to decide what to publish
+    - Uses Fibers (nodejs library)
+      - makes iterative code into synchronous callbacks
+    - Super rapid prototyping
+ 
+# HHVM
+  - HPHPC
+    - quick dirty hack in 2010 - 2011
+  - 2013
+    - HHVM gets a dedicated team
+    - Open Source
+  - 2014
+    - Lots of new shiny
+    - devops and continuous integration
+    - Hack programming language
+  - Community
+    - Baidu running on it!
+  - Compile to machine code then run it
+  - Production mode serves cached code
+    - 10 -25% gain
+  - Uses zend engine to compile to bytecode
+    - optimize this bytecode
+    - virtualized
+    - then into machine code
+    - slower to compile, faster to load <- important part
+  - both faster and more requests per second
+  - HACK
+    - Both superset and subset of PHP
+    - gradually typed language
+      - no strict typing but strongly encouraged
+    - public functions actually public
+    - generics
+    - arrays rebooted
+    - async functions for batching framework
+    - hh_server convert "The hackificator"
+    - conversion at facebook
+      - 10% - 90% over 1 year
+    - No globals
+    - no html embedded in your php
+    - User attributes
+      - user defined metadata
+    - XHP
+      - XSS filterer for markup output
+      - Why did Drupal pick Twig instead of this? WHY!
+      - componentizer for html
+      - strongly staticly typed
+    - HPHPd
+      - interactive shell
+      - gdb-like debugger
+      - xdebug support getting built
+    - Spec for php is "does it work" "its compliant"
+      - Facebook has hired someone to write the PHP spec!
+      - PHPng will need this
+      - released next week
+      - Take that eevee!
+      - will be living doc curated by php community
