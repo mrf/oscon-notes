@@ -260,5 +260,59 @@ Summary
     - Signal similar to websockets for .net 
   - despite rumors asp.net not responsible for banking crisis 
   - Microsoft slogan contest
-    - remember us
-    - halo didn't suck
+    - remember us?
+    - halo didn't suck...
+ 
+# Mongodb and Go
+  - Steve Francia
+  - Concurrent on both ends
+    - better throughput without flooding db
+  - GridFS
+    - not really a file system
+
+# PHP 5.6
+  - Adam Harvey
+  - close to 4k commits since 5.5
+  - a lot of first time commiters
+  - Should be out Augustish
+  - Variatic Functions
+    - function foo(...$params) {
+      - Now we have a params array
+    - replaces call_user_func_array
+    - faster by 30%
+  - Constant Scalar Expressions
+  - use function, use const
+  - PHPDBG
+    - xdebug replacement built into php
+    - command line debugger
+    - won't really work with Drupal 7, 8 maybe...
+  - new config value default_charset
+  - SSL / TLS ciphers fixed, perfect forward enabled by default if server supports
+  - json_decode now matches spec for TRUE vs true < this the good one
+  - Deprecations
+    - $HTTP_RAW_POST_DATA
+    - serialize hack removed that allowed you to skip calling constuctor
+  - The Future
+    - no new major version yet
+    - next version likely 6
+    - new versions are scary
+    - python 2->3 BIG rewrite
+      - prepared users well
+      - adoption slow and maintaining 2 for a LONG time 
+    - Ruby 1.9->2
+      - small changes, non-event
+    - PERL 5->6
+      - massive failure
+    - PHP 4->5
+      - significant OO changes
+    - PHP 5->6 "the unicode release"
+      - dead in water
+    - How should you do this?
+      - Breaking chnages have to be well justified
+      - Breaking changes default to rejected
+    - PHPNG
+      - Rewrite of Zend Engine
+      - Competitor to HipHop
+      - Start of next new version
+    - Uniform Variable Syntax
+      - First backword compatibility break
