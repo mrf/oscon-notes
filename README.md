@@ -316,3 +316,27 @@ Summary
       - Start of next new version
     - Uniform Variable Syntax
       - First backword compatibility break
+
+# You Don't Know How Computers Work
+  - Matthew Garret
+    - security dude
+  - Computers
+    - Deterministic -> mostly
+    - Simple -> Complicated
+    - Predictable -> Utterly unpredictable
+    - Safe -> Liable to explode if provoked
+  - Parts
+    - CPU -> More like multiple CPUs
+    - RAM -> And some hidden RAM (more executable code)
+    - Storage
+    - -> Maybe an entire different computer
+  - System Management Mode
+    - Thermal management, stops execution
+    - Has a mind of its own
+    - frequently msec at a time
+  - Network Cards
+    - AMT
+      - steals ports 16992 - 16995
+  - Lessons to take time
+    - nobody understands computers completely
+    - its just going to get worse
