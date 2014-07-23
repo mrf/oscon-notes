@@ -457,3 +457,92 @@ Summary
       - pass value through multiple hash fnctions
         - for each hash function we mark if hash is hit
         - we rehash to look up if its in our filter
+
+
+# There will be bugs
+  - when pushing envelope
+  - when learning new things
+  - in short always
+  - once in 1974 there was an exception
+    - trio programming punch cards
+    - untested even though they knew testing as important
+    - pure luck
+  - where do bugs like to hide
+    - advanced / clever stuff BEWARE
+    - boilerplate / duplicated code
+    - rarely executed code
+      - focus testing here
+    - not fully understood problem / architecture / platform
+    - previously buggy code
+      - special case of TDD
+  - debugging twice as hard as programming
+    - break up long and complicated things
+      - if you have to ask the answer is always YES
+    - break up complex decision chains
+    - regexs must be tested A LOT
+      - regex101.com
+  - DRY
+    - no copy and paste
+    - duplicate code the stinkiest code smell
+    - everything changes all the time if duplicated you will miss it
+    - abstract what varies merge what doesn't
+    - if it not dry its W.E.T
+  - Why do bugs happen
+    - your brain is trying to trick you!
+      - it sees what it expects
+      - attention lapses + selective attention
+      - pride hides bugs
+        - beware "ITS PERFECT"
+  - Egoless Programming
+    - really need to read Psychology of Computer Programming
+    - you will make mistakes, get help to find them early
+    - you are not your code, review nicely
+      - critique code not people
+  - eyeballs
+    - linus law, and criticisms, eyeballs not enough
+  - pair programming
+    - produces higher quality code
+    - produces higher 'hit by bus' number
+  - code reviews
+    - still needed for pair code because groupthink
+    - formal 'fagan inspection' review line by line in meeting
+      - bikeshedding risk
+      - reduces bugs by 10x
+  - testing = automated eyeballs
+    - "code without tests borken by design"
+    - integrationtests + unit tests
+  - balance automation and eyeballs
+    - each one catches different things
+  - use linting to avoid bikeshedding style issues
+  - tools, best if everything automated and integrated
+    - source control is #1
+    - testing framework
+    - bug tracker
+    - code review tool 
+  - Wait wait what about debuggers?
+    - only mildly important
+    - helpful as learning device
+  - The more powerful the tools the more they take over
+    - focus on: simplicity
+  - parse bug logs instead of getting hijacked by individual bugs
+  - keep version control setup as simple as possible
+    - branches and merges convolute history
+  - python stuff, more python stuff
+    - pylint for python linting
+      - very configurable
+  - worst kinds of bugs
+    - race conditions, deadlocks, starvation
+      - test won't catch these
+      - prevention best cure
+      - avoid shared rw memory
+  - Test driven development
+    - if possible prepare tests before coding
+    - not soo practical for adding features
+    - more practical for integration functional tests
+      - BDD makes more sense here
+    - for fixing bugs YES
+      - try to reproduce bug through test
+      - keep in test suite to avoid regressions
+    - refactoring
+      - neve refactor without tests
+      - "Working effectively with legacy code"
