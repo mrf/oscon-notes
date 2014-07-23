@@ -398,3 +398,62 @@ Summary
     - Cult of Disruption in Silicon Valley
       - Focus on what needs to be fixed, not what will make you $$$$
       - Star Trek future won't happen unless we decide to make it happen
+
+
+# Data Structures you THINK you need to know
+  - "Lists and maps work fine for me" 
+  - Arrays - the most boring data structure
+    - Not friendly to insert / delete takes more time bigger the array
+    - access always takes same amount of time
+  - Lists
+    - Can be built on top of arrays
+    - insert from head and tail
+    - changin easier accessing value not so easy
+    - Linked means we know 
+      - pointers so we know beginning and end and who is next to who
+      - can be doubly linked both directions
+  - Trees
+    - Worthy of its own talk
+    - Special case of graph
+    - nodes joined by directed edges
+    - think connected and directed graph
+    - Binary Trees
+      - full binary tree = every node has zero or 2
+      - perfect binary tree = full tree where all leaves have same depth
+      - binary search tree
+        - solution to problem of going through array 1 by 1
+        - linear search
+        - 0(LOG N) search
+        - 0(LOG N) Insert / Delete
+        - has to be balanced
+          - unbalanced == degenerate search tree aka LIST
+        - red-black tree (didn't quite get this read more)
+          - nodes are red or black
+          - root is black
+          - leaves are black
+          - red nodes have two black children
+          - every path mus have same number of black nodes (balanced)
+          - right rotation - size of tree doesn't matter
+        - Merkle trees
+          - think push / pull network calls in git or cassandra db
+          - I have a list
+          - multiple copies of this list and it gets changes
+          - hashes created to represent the item (like git commits)
+            - build a perfect binary tree out of hashing the hashes
+            - then don't have to go all the way down to tree if top hashes match
+            - when bottom of list is changed changes propogate all the way to the top
+              - now we go down branching off until we find our change
+                - this called breadth-first traversal
+        - Ropes
+          - default string implementation = array
+          - sub type of binary tree
+          - low memory overhead for string change
+          - harder to work with than simple array
+          - insertion = split then concat
+    - Bloom Filters
+      - really big set of things
+      - want to test for membership
+      - add but don't want to remove
+      - pass value through multiple hash fnctions
+        - for each hash function we mark if hash is hit
+        - we rehash to look up if its in our filter
