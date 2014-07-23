@@ -546,3 +546,50 @@ Summary
     - refactoring
       - neve refactor without tests
       - "Working effectively with legacy code"
+
+# Beyond XSS 
+  - XSS
+    - not always cross anythine
+    - escape output
+      - why on output? because different escaping for diferent things
+      - use a 
+  - SQL Injection
+    - care with '; DROP TABLE PLATES;'
+    - sanitize on input
+    - prepared statements and DB abstraction layers protect you
+  - So we've seen the tip of the iceberg, here's the rest
+    - Same Origin Policy SQL Injection
+      - Same Origin Policy
+        - prevents access to DOM / ajax requests from different domain
+      - Cross Origin Resource Sharing
+        - allows you to punch hole in SOP
+      - readyState
+        - propery on xhtmlhttprequest object to tell if loading
+        - allows you to measure timing
+        - all we know is how long
+          - Time-based SQL Injection
+            - on failures super fast
+            - when we get a slow response we have a hit
+    - Pixel Perfect Timing
+      - requestAnimationFrame
+        - called automatically whenever new frame rendered by browser
+      - measure rendering time 
+        - capped at 60fps
+        - by measuring svg filter execution timing can tell color of visited vs non-visited links
+    - CSRF
+      - use one time tokens per request to make sure its coming from current active user
+      - if we can read source with PPT then we have the tokens CSRF opened back up
+    - ClickJacking
+      - transparent iframe over top of known site with known button locations
+        - select all emails in gmail and delete while you think you are playing a game
+      - developers can disallow access with x-frame-options
+        - prevents your site from being loaded in an iframe
+    ###Prevention
+    - Content Security Policy
+      - only allowed to include JS and CSS from same domain
+      - Clean Code name dropped for 3rd time, must read it
+      - script-src whitelist domains for js
+      - img-src whitelist domains for images
+      - report-uri will log people who break the rules
+      - redirects allow hackers to exploit with their own policies and reporting 
+        - tell facebook usernames, tell if people are logged in
