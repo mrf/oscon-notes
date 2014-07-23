@@ -340,3 +340,42 @@ Summary
   - Lessons to take time
     - nobody understands computers completely
     - its just going to get worse
+  - Security is incremental
+    - at least SOMETHING is fixed
+
+# Weds Keynote
+  - Don't want to talk about security
+    - Scary
+    - Really hard math (libraries for that now)
+  - Governments
+    - Want back doors 
+  - Civilization Good
+    - Fight agains those who want to take that away
+  - HTTPS
+    - Go to legal ask them if its ok if everyone listens in on traffic, see what they say
+  - PGP
+    - Libraries exist, use them
+  - Some solutions political some technical: do both
+  - Paypal
+    - Danese
+    - Intersourcing
+    - All source available within the company, if not outside <- see Google
+  - Simon Wardley
+    - Favorite Lie: We have a strategy 
+    - Why: Small and Vague
+    - 67& have social big data and cloud
+      - hmm we should have that too
+    - 1984 62 companies you should copy (Kodak, Atari)
+    - Generals don't respond "67% of generals bombard hills"
+    - Cloud computing book - 48 years ago
+  - Leslie Hawthorn
+    - Community Manager ElasticSearch
+    - Check Your Privilege
+      - bandaids as a systemic problem
+      - can't see the default when its designed for you
+      - #HTHT Experiments
+        - Beginner level: active listening
+        - Intermediate: Change Your Speech
+          - may be uncomfortable for you
+        - Advanced: Speak Up for Others
+          - ok to pass, but think about doing it
