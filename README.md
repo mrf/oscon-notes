@@ -379,3 +379,22 @@ Summary
           - may be uncomfortable for you
         - Advanced: Speak Up for Others
           - ok to pass, but think about doing it
+  - Tim Oreilly
+    - Tech and Cultural Revolutions
+    - "we know about the tech but can't organize ourselves"
+    - Psychology of Computer Programming - if we share our code and accept feedback Brooke's law not always true
+    - obligation to give back to OS may be decreasing
+    - How Amazon Became a Platform
+      - expose all interfaces or you're fired
+    - See: Empathy: The Essence of DevOps
+    - Healthcare.gov
+      - Team of engineers rescued the site
+      - a lot of human components
+      - cultural failure
+    - Standups should focus on human blocks 
+    - Have to allow devs and sysadmins to make promises to eachother
+    - Read: The Pheonix Project
+    - Have to debug the human side sometimes
+    - Cult of Disruption in Silicon Valley
+      - Focus on what needs to be fixed, not what will make you $$$$
+      - Star Trek future won't happen unless we decide to make it happen
