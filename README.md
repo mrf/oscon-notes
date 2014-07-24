@@ -621,3 +621,96 @@ Summary
       - post processing
     - less than 100mb on most mobiles recommended
       - memory may already be used up
+
+# Thursday Keynotes
+  - Live Programming Concerts
+    - need video to really grasp
+  - Beth Flanagan
+    - your refrigerator is trying to kill you
+      - unupgraded embedded device vulnerabilities
+        - is this really less important than ecommerce
+        - no longer small dumb devices
+          - biggest issue is addition of connectivity
+        - these things almost never get upgraded
+          - need to be treated like web servers
+      - implantables
+        - pacemakers etc.
+        - remote hacking of insulin pumps POC
+        - FDA red tape around upgrades
+      - need to think as openly as possible about full stack
+        - device will last longer than you are willing to write upgrades...
+          - open source! people will support it if they need it
+  - Ryan Vineyard
+    - Open Hardware
+      - mostly 3d printing parts to improve your 3d printer
+      - arduino has open hardware plans as well
+      - blog.keyboard.io
+      - definition
+        - I can compile
+        - I can design
+        - I can manufacture <- this part is hard
+          - injection molding not really open
+  - Rachel Nabors
+    - rachelnabors.com
+    - cartoonist at 17
+    - decided to do "web stuff"
+    - 'reinventing comics - scott mcloud'
+      - imagined future of comics
+    - went on conference tour to spread the news
+      - "I wish I could draw like you"
+        - easy quit your job and spend 7 years drawing
+      - artists wish they could code like you
+        - collaborate!
+
+# Web RTC
+  - Brian Capouch + 2 Students from small Indiana school
+  - Brief History
+    - chaotic moments of technology trying to find its direction
+    - wild west of toolkits and frameworks
+    - 2010 Google buys On2 and GIPS
+      - everything either open sourced or dropped
+    - w3c IETF and several other working groups
+  - Connects browser to physical devices
+    - voice
+    - video
+    - screen sharing
+    - data sharing
+  - Not
+    - a freedom from NAT
+    - signaling not in the spec
+      - no built in p2p discovery
+    - easy way to interact with VOIP
+    - ubiquitous
+      - MS and Apple missing out
+  - Issues
+    - unfinished standards
+    - codec wars
+    - infighting
+    - MS and Apple missing out
+      - plugins exist
+    - interoperability challenges
+    - not dealing well with jitter (ie conference wifi)
+  - Providers
+    - tokbox
+      - toolkit for signaling
+    - forge
+    - onsip
+      - explicity address signaling
+    - twilio
+  - Toolkit survey
+    - criteria: open source, active, documented, something that resembles a community
+    - PeerJS
+      - easy to start, supported in the open
+      - jquery like syntax
+      - complete set of tools
+    - jssip
+      - easy to set up with existing voice servers
+    - webrtc-experiment.com
+      - Muaz Khan
+      - he learned it all so you don't have to
+      - SOOOOO many demos and examples
+    - asterisk
+    - freeswitch
+      - great demos to demonstrate whats capable
+    - sipML5
+      - duobango master client
