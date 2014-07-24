@@ -593,3 +593,31 @@ Summary
       - report-uri will log people who break the rules
       - redirects allow hackers to exploit with their own policies and reporting 
         - tell facebook usernames, tell if people are logged in
+
+# Local Storage with Javascript
+  - Structured Data
+    - not well suited for local storage
+  - Demo'd offline map, where image tiles were stored
+  - very soon will have full cross-browser support
+  - IndexedDB
+    - key value pairs
+    - indexing
+    - notifications via the DOM
+    - can use anything as our key
+    - all kinds of structures as values
+      - helps with app performance (no conversion overhead)
+    - IndexedDBShim.js
+      - implments Safari's Web SQL
+    - Checking if device works
+      - try an insert instead of just checking for a function to exist
+    - two ways to add data
+      - add(value, #optional# key)
+        - unique values
+        - duplicates fail
+      - put(value, #optional# key)
+        - overwrite existing
+    - different kinds of processing
+      - pre processing
+      - post processing
+    - less than 100mb on most mobiles recommended
+      - memory may already be used up
